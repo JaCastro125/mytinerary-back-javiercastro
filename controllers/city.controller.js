@@ -14,20 +14,21 @@ const controller = {
         }
 
         try {
-            const cities = await City.find(queries)
+            const cities = await City.find(queries).populate('user');
 
-            if (cities, lenght > 0) {
+            if (cities.length > 0) {
                 return res.status(200).json({
                     success: true,
                     events: cities
                 })
             }
-
             return res.status(404).json({
                 success: true,
                 message: 'No se encontraron ciudades'
             })
+
         } catch (error) {
+            console.log(error);
             return res.status(500).json({
                 success: false,
                 message: 'Error al obtener ciudades'
@@ -35,7 +36,7 @@ const controller = {
         }
     },
 
-    getCityById: async (res, req) => {
+    getCityById: async (req, res) => {
         
         try {
             const oneCity = await City.findById(req.params.id)
@@ -46,11 +47,14 @@ const controller = {
                     city: oneCity
                 })
             }
+
             return res.status(404).json({
                 success: false,
                 message: 'No se pudo encontrar el id'
             })
+
         } catch (error) {
+            console.log(error);
             return res.status(500).json({
                 success: false,
                 message: 'Error al buscar id'
