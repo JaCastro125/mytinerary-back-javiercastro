@@ -3,122 +3,92 @@
     {
       "country": "France",
       "city": "Paris",
-      "image": "https://www.eluniversal.com.mx/sites/default/files/u189/que_hacer_turismo_paris_imagen.jpg",
-      "date": "",
-      "detail": "Paris is the capital of France, famous for landmarks like the Eiffel Tower and Notre Dame Cathedral.",
-      "price": 2500
+      "image": "https://p1.pxfuel.com/preview/51/123/716/louvre-pyramid-paris-architecture.jpg?w=500&h=400&s=1",
+      "coment": "Paris is the capital of France, famous for landmarks like the Eiffel Tower and Louvre Museum."
     },
     {
       "country": "Italy",
       "city": "Rome",
-      "image": "https://cdn.getyourguide.com/img/tour/5d37b167df05b.jpeg/148.jpg",
-      "date": "",
-      "detail": "Rome is the capital of Italy, known for its ancient ruins, Renaissance churches, Baroque squares and delicious cuisine.",
-      "price": 2000
+      "image": "https://p1.pxfuel.com/preview/211/978/358/architecture-building-infrastructure-structure.jpg?w=500&h=400&s=1",
+      "comment": "Rome is the capital of Italy, known for its ancient ruins, Renaissance churches, Baroque squares and delicious cuisine."
     },
     {
       "country": "Spain",
       "city": "Barcelona",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/a2/bf/6f/photo3jpg.jpg?w=500&h=400&s=1",
-      "date": "",
-      "detail": "Barcelona is a Spanish city famous for Gaudí architecture like the Sagrada Familia and Park Güell.",
-      "price": 1800
+      "image": "https://p1.pxfuel.com/preview/255/457/233/barcelona-city-spain-sagrada-familia.jpg?w=500&h=400&s=1",
+      "comment": "Barcelona is a Spanish city famous for Gaudí architecture like the Sagrada Familia and Park Güell."
     },
     {
       "country": "United States",
       "city": "New York",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/6b/1f/7e/new-york.jpg?w=500&h=400&s=1",
-      "date": "",
-      "detail": "New York is an iconic city of skyscrapers, Broadway theaters, world-class restaurants and luxury boutiques.",
-      "price": 2500
+      "image": "https://e1.pxfuel.com/desktop-wallpaper/917/109/desktop-wallpaper-times-square-new-york-usa-city-cities-neon-lights-g-neon-city.jpg?w=500&h=400&s=1",
+      "comment": "New York is an iconic city of skyscrapers, Broadway theaters, world-class restaurants and luxury boutiques."
     },
     {
       "country": "United Kingdom",
       "city": "London",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/61/7e/f3/london.jpg?w=500&h=400&s=1",
-      "date": "",
-      "detail": "London is the capital of England, famous for landmarks like Big Ben, Buckingham Palace and the London Eye.",
-      "price": 2000
+      "image": "https://e0.pxfuel.com/wallpapers/310/271/desktop-wallpaper-london-eye-at-night-%E2%9D%A4-for-ultra.jpg?w=500&h=400&s=1",
+      "comment": "London is the capital of England, famous for landmarks like Big Ben, Buckingham Palace and the London Eye."
     },
     {
       "country": "Australia",
       "city": "Sydney",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/4d/3c/0e/sydney.jpg?w=500&h=400&s=1",
-      "date": "",
-      "detail": "Sydney is an Australian coastal city known for the Sydney Opera House, Harbour Bridge and Sydney Harbour.",
-      "price": 2500
+      "image": "https://e0.pxfuel.com/wallpapers/689/173/desktop-wallpaper-sydney-opera-house-opera-sydney-australia-house.jpg?w=500&h=400&s=1",
+      "comment": "Sydney is an Australian coastal city known for the Sydney Opera House, Harbour Bridge and Sydney Harbour."
     },
     {
       "country": "Greece",
       "city": "Athens",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/db/01/2b/athens.jpg?w=500&h=400&s=1",
-      "date": "",
-      "detail": "Athens is the capital of Greece, the cradle of Western civilization, known for monuments like the Acropolis.",
-      "price": 2000
+      "image": "https://e1.pxfuel.com/desktop-wallpaper/124/768/desktop-wallpaper-acropolis-hill-athens-ultra-athens.jpg?w=500&h=400&s=1",
+      "comment": "Athens is the capital of Greece, the cradle of Western civilization, known for monuments like the Acropolis."
     },
     {
       "country": "Egypt",
       "city": "Cairo",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/d2/e9/01/cairo.jpg?w=500&h=400&s=1",
-      "date": "",
-      "detail": "Cairo is the capital of Egypt, known for attractions like the Giza pyramids, Citadel and Egyptian Museum.",
-      "price": 1500
+      "image": "https://p1.pxfuel.com/preview/817/861/171/pyramid-sky-desert-ancient.jpg?w=500&h=400&s=1",
+      "comment": "Cairo is the capital of Egypt, known for attractions like the Giza pyramids, Citadel and Egyptian Museum."
     },
     {
       "country": "Thailand",
       "city": "Bangkok",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/6d/1f/f6/bangkok.jpg?w=500&h=400&s=1",
-      "date": "",
-      "detail": "Bangkok is the vibrant capital of Thailand, known for Buddhist temples and delicious street food.",
-      "price": 1200
+      "image": "https://p0.pxfuel.com/preview/61/491/804/buddhism-buddha-statue-religion.jpg?w=500&h=400&s=1",
+      "comment": "Bangkok is the vibrant capital of Thailand, known for Buddhist temples and delicious street food."
     },
     {
       "country": "Japan",
       "city": "Tokyo",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/6d/23/3f/tokyo.jpg?w=500&h=400&s=1",
-      "date": "",
-      "detail": "Tokyo is the capital of Japan, mixing ultramodern and traditional with skyscrapers, temples and pop culture.",
-      "price": 2500
+      "image": "https://p0.pxfuel.com/preview/509/49/270/tokyo-city-japan-crossroad.jpg?w=500&h=400&s=1",
+      "comment": "Tokyo is the capital of Japan, mixing ultramodern and traditional with skyscrapers, temples and pop culture."
     },
     {
       "country": "Turkey",
       "city": "Istanbul",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/74/55/bc/istanbul.jpg?w=500&h=400&s=1",
-      "date": "",
-      "detail": "Istanbul straddles Europe and Asia, with Ottoman sites like the Blue Mosque and Grand Bazaar.",
-      "price": 1500
+      "image": "https://p1.pxfuel.com/preview/754/69/83/architecture-city-cityscape-mosque-night-nightscape.jpg?w=500&h=400&s=1",
+      "comment": "Istanbul straddles Europe and Asia, with Ottoman sites like the Blue Mosque and Grand Bazaar."
     },
     {
       "country": "Mexico",
       "city": "Cancun",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/5f/e2/51/cancun.jpg?w=500&h=400&s=1",
-      "date": "",
-      "detail": "Cancun is a Mexican beach resort famous for its beaches, nightlife and seaside all-inclusive resorts on the Caribbean Sea.",
-      "price": 1000
+      "image": "https://p1.pxfuel.com/preview/394/781/130/cancun-mexico-beach-huts.jpg?w=500&h=400&s=1",
+      "comment": "Cancun is a Mexican beach resort famous for its beaches, nightlife and seaside all-inclusive resorts on the Caribbean Sea."
     },
     {
       "country": "Colombia",
       "city": "Cartagena",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/28/d6/8a/cartagena.jpg?w=500&h=400&s=1",
-      "date": "",
-      "detail": "Cartagena is a colonial Colombian Caribbean city with 16th century walls, palaces and convents.",
-      "price": 1200
+      "image": "https://p1.pxfuel.com/preview/180/513/223/colombia-cartagena-holiday-beach.jpg?w=500&h=400&s=1",
+      "comment": "Cartagena is a colonial Colombian Caribbean city with 16th century walls, palaces and convents."
     },
     {
       "country": "Peru",
       "city": "Machu Picchu",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/6e/df/0e/machu-picchu.jpg?w=500&h=400&s=1",
-      "date": "",
-      "detail": "Machu Picchu is a 15th century Inca citadel high in the Peruvian Andes, known for its architecture and views.",
-      "price": 1500
+      "image": "https://p1.pxfuel.com/preview/724/423/723/machu-pichu-peru-tourism-heritage.jpg?w=500&h=400&s=1",
+      "comment": "Machu Picchu is a 15th century Inca citadel high in the Peruvian Andes, known for its architecture and views."
     },
     {
       "country": "Brazil",
       "city": "Rio de Janeiro",
-      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/28/d6/8b/rio-de-janeiro.jpg?w=500&h=400&s=1",
-      "date": "",
-      "detail": "Rio de Janeiro is a vibrant Brazilian city famous for beaches like Copacabana, Sugarloaf Mountain and Carnival.",
-      "price": 1800
+      "image": "https://p1.pxfuel.com/preview/312/834/363/rio-brazil-janeiro-brazilian.jpg?w=500&h=400&s=1",
+      "comment": "Rio de Janeiro is a vibrant Brazilian city famous for beaches like Copacabana, Sugarloaf Mountain and Carnival."
     }
   ]
 }
