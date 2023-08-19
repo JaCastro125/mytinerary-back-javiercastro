@@ -5,12 +5,12 @@ const controller = {
 
         let queries = {}
 
-        if (req.query.city) {
-            queries.city = new RegExp(`^${req.query.city}`, 'i')
+        if (req.query.country) {
+            queries.country = new RegExp(`^${req.query.country}`, 'i')
         }
 
-        if (req.query.country) {
-            queries.country = req.query.country
+        if (req.query.city) {
+            queries.city = req.query.city
         }
 
         try {
@@ -19,28 +19,28 @@ const controller = {
             if (cities.length > 0) {
                 return res.status(200).json({
                     success: true,
-                    events: cities
+                    cities: cities
                 })
             }
             return res.status(404).json({
                 success: true,
-                message: 'No se encontraron ciudades'
+                message: 'No cities found'
             })
 
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 success: false,
-                message: 'Error al obtener ciudades'
+                message: 'Error getting cities'
             })
         }
     },
 
     getCityById: async (req, res) => {
-        
+
         try {
             const oneCity = await City.findById(req.params.id)
-            
+
             if (oneCity) {
                 return res.status(200).json({
                     success: true,
@@ -50,14 +50,14 @@ const controller = {
 
             return res.status(404).json({
                 success: false,
-                message: 'No se pudo encontrar el id'
+                message: 'Not find id'
             })
 
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 success: false,
-                message: 'Error al buscar id'
+                message: 'Error getting id'
             })
         }
     },
@@ -74,10 +74,44 @@ const controller = {
             console.log(error);
             return res.status(500).json({
                 success: false,
-                message: 'Error al crear city'
+                message: 'Error creating city'
             })
         }
-    }
+    },
+
+    updateCity: async (req, res) => {
+        try {
+            await City.updateOne({ _id: req.params.id }, req.body)
+
+            return res.status(200).json({
+                success: true,
+                message: 'The city was updated successfully'
+            })
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json({
+                success: false,
+                message: 'Error creating city'
+            })
+        }
+    },
+
+    deleteCity: async (req, res) => {
+        try {
+            await City.deleteOne({ _id: req.params.id })
+
+            return res.status(200).json({
+                success: true,
+                message: 'The city it was deleted successfully'
+            })
+        } catch (error) {
+            console.log(error)
+            return res.status(500).json({
+                success: false,
+                message: 'Error deleting the city'
+            })
+        }
+    },
 }
 
 export default controller;
