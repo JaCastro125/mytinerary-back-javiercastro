@@ -1,6 +1,7 @@
 import { Schema, model, Types } from "mongoose";
 
 const collection = 'cities'
+
 const schema = new Schema ({
     country: {type: String, required: true},
     city: {type: String, required: true},
