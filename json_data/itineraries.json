@@ -1,0 +1,300 @@
+{
+  "itineraries": [
+    {
+      "name": "Paris Itinerary 1",
+      "duration": 3,
+      "price": 4,
+      "like": 10,
+      "activities": ["64f23127b3432db1060e17fe", "64f23127b3432db1060e17fc", "64f23127b3432db1060e1802"],
+      "hashtags": ["sightseeing", "culture", "food"],
+      "comments": [
+        {
+          "comment": "Had an amazing time exploring the beautiful streets of Paris!",
+          "user": "64f2357713eaddd7b2c13d01"
+        }
+      ]
+    },
+    {
+      "name": "Paris Itinerary 2",
+      "duration": 5,
+      "price": 3,
+      "like": 5,
+      "activities": ["64f23127b3432db1060e17fd", "64f23127b3432db1060e1803", "64f23127b3432db1060e1801"],
+      "hashtags": ["museums", "shopping", "nightlife"],
+      "comments": [
+        {
+          "comment": "Visited the Louvre and enjoyed the vibrant nightlife in Paris.",
+          "user": "64f2357713eaddd7b2c13d01"
+        }
+      ]
+    },
+    {
+      "name": "Paris Itinerary 3",
+      "duration": 5,
+      "price": 2,
+      "like": 2,
+      "activities": ["64f23127b3432db1060e1804", "64f23127b3432db1060e1800","64f23127b3432db1060e17ff"],
+      "hashtags": ["parks", "architecture"],
+      "comments": [
+        {
+          "comment": "Explored the beautiful parks and admired the stunning architecture in Paris.",
+          "user": "64f2357713eaddd7b2c13d01"
+        }
+      ]
+    },
+    {
+      "name": "Rome Itinerary 1",
+      "duration": 5,
+      "price": 5,
+      "like": 8,
+      "activities": ["64f23127b3432db1060e1805","64f23127b3432db1060e1806","64f23127b3432db1060e1807"],
+      "hashtags": ["historical sites", "cuisine", "art"],
+      "comments": [
+        {
+          "comment": "Visited the Colosseum and enjoyed authentic Italian cuisine.",
+          "user": "64f2357713eaddd7b2c13d01"
+        }
+      ]
+    },
+    {
+      "name": "Rome Itinerary 2",
+      "duration": 3,
+      "price": 4,
+      "like": 6,
+      "activities": ["64f23127b3432db1060e1809","64f23127b3432db1060e1808", "64f23127b3432db1060e180a"],
+      "hashtags": ["vatican", "shopping"],
+      "comments": [
+        {
+          "comment": "Explored the Vatican and went on a shopping spree in Rome.",
+          "user": "64f2357713eaddd7b2c13cfb"
+        }
+      ]
+    },
+    {
+      "name": "Barcelona Itinerary 1",
+      "duration": 4,
+      "price": 4,
+      "like": 8,
+      "activities": ["64f23127b3432db1060e180b", "64f23127b3432db1060e180c","64f23127b3432db1060e180d"],
+      "hashtags": ["architecture", "beach", "tapas"],
+      "comments": [
+        {
+          "comment": "Explored the stunning architecture and enjoyed delicious tapas in Barcelona.",
+          "user": "64f2357713eaddd7b2c13cfb"
+        }
+      ]
+    },
+
+    {
+      "name": "New York Itinerary 1",
+      "duration": 5,
+      "price": 5,
+      "like": 10,
+      "activities": ["64f23127b3432db1060e180f","64f23127b3432db1060e1810","64f23127b3432db1060e1811"],
+      "hashtags": ["skyscrapers", "museums", "Central Park"],
+      "comments": [
+        {
+          "comment": "Explored the iconic skyscrapers, visited world-class museums, and enjoyed a stroll in Central Park.",
+          "user": "64f2357713eaddd7b2c13cfb"
+        }
+      ]
+    },
+    {
+      "name": "New York Itinerary 2",
+      "duration": 4,
+      "price": 4,
+      "like": 7,
+      "activities": ["64f23127b3432db1060e1812","64f23127b3432db1060e1814","64f23127b3432db1060e1813"],
+      "hashtags": ["Broadway", "food", "shopping"],
+      "comments": [
+        {
+          "comment": "Watched a Broadway show, tried diverse cuisines, and went shopping in New York.",
+          "user": "64f2357713eaddd7b2c13d01"
+        }
+      ]
+    },
+    {
+      "name": "New York Itinerary 3",
+      "duration": 3,
+      "price": 3,
+      "like": 5,
+      "activities": ["64f23127b3432db1060e1816","64f23127b3432db1060e1815","64f23127b3432db1060e180e"],
+      "hashtags": ["statueofliberty", "nightlife"],
+      "comments": [
+        {
+          "comment": "Visited the Statue of Liberty and enjoyed the vibrant nightlife in New York.",
+          "user": "64f2357713eaddd7b2c13d00"
+        }
+      ]
+    },
+
+    {
+      "name": "London Itinerary 1",
+      "duration": 3,
+      "price": 3,
+      "like": 7,
+      "activities": ["64f23127b3432db1060e1817","64f23127b3432db1060e1819","64f23127b3432db1060e1818"],
+      "hashtags": ["theater", "shopping", "parks"],
+      "comments": [
+        {
+          "comment": "Watched a theater performance, went shopping, and enjoyed the beautiful parks in London.",
+          "user": "64f2357713eaddd7b2c13d00"
+        }
+      ]
+    },
+    {
+      "name": "London Itinerary 2",
+      "duration": 5,
+      "price": 5,
+      "like": 10,
+      "activities": ["64f23127b3432db1060e181b","64f23127b3432db1060e181a"],
+      "hashtags": ["cuisine", "rivercruise"],
+      "comments": [
+        {
+          "comment": "Indulged in delicious cuisine and took a memorable river cruise in London.",
+          "user": "64f2357713eaddd7b2c13cff"
+        }
+      ]
+    },
+    {
+      "name": "Sydney Itinerary 1",
+      "duration": 4,
+      "price": 5,
+      "like": 9,
+      "activities": ["64f23127b3432db1060e181d","64f23127b3432db1060e181e","64f23127b3432db1060e181f","64f23127b3432db1060e181c"],
+      "hashtags": ["cuisine", "nightlife"],
+      "comments": [
+        {
+          "comment": "Tasted delicious cuisine and experienced the vibrant nightlife in Sydney.",
+          "user": "64f2357713eaddd7b2c13cfd"
+        }
+      ]
+    },
+    {
+      "name": "Athens Itinerary 1",
+      "duration": 3,
+      "price": 3,
+      "like": 7,
+      "activities": ["64f23127b3432db1060e1820","64f23127b3432db1060e1821","64f23127b3432db1060e1822"  ],
+      "hashtags": ["acropolis", "history", "localfood"],
+      "comments": [
+        {
+          "comment": "Explored the majestic Acropolis, learned about the rich history, and savored authentic local food in Athens.",
+          "user": "64f2357713eaddd7b2c13cfa"
+        }
+      ]
+    },
+    {
+      "name": "Cairo Itinerary 1",
+      "duration": 3,
+      "price": 4,
+      "like": 8,
+      "activities": ["64f23127b3432db1060e1825","64f23127b3432db1060e1823","64f23127b3432db1060e1824"],
+      "hashtags": ["pyramids", "museums", "localfood"],
+      "comments": [
+        {
+          "comment": "Explored the magnificent pyramids, visited fascinating museums, and savored delicious local food in Cairo.",
+          "user": "64f2357713eaddd7b2c13d00"
+        }
+      ]
+    },
+    {
+      "name": "Bangkok Itinerary 1",
+      "duration": 5,
+      "price": 5,
+      "like": 10,
+      "activities": ["64f23127b3432db1060e1829","64f23127b3432db1060e1828","64f23127b3432db1060e182d","64f23127b3432db1060e1826"],
+      "hashtags": ["temples", "streetfood", "floatingmarket"],
+      "comments": [
+        {
+          "comment": "Explored stunning temples, indulged in delicious street food, and experienced the vibrant floating markets in Bangkok.",
+          "user": "64f2357713eaddd7b2c13cf9"
+        }
+      ]
+    },
+    {
+      "name": "Tokyo Itinerary 1",
+      "duration": 4,
+      "price": 4,
+      "like": 9,
+      "activities": [],
+      "hashtags": ["shrines", "technology", "ramen"],
+      "comments": [
+        {
+          "comment": "Explored beautiful shrines, experienced futuristic technology, and tasted delicious ramen in Tokyo.",
+          "user": "64f2357713eaddd7b2c13cf9"
+        }
+      ]
+    },
+    {
+      "name": "Istanbul Itinerary 1",
+      "duration": 5,
+      "price": 5,
+      "like": 10,
+      "activities": ["64f23127b3432db1060e182c","64f23127b3432db1060e182b","64f23127b3432db1060e182a"],
+      "hashtags": ["mosques", "bazaars", "cruise"],
+      "comments": [
+        {
+          "comment": "Explored stunning mosques, wandered through vibrant bazaars, and enjoyed a memorable cruise on the Bosphorus in Istanbul.",
+          "user": "64f2357713eaddd7b2c13cf9"
+        }
+      ]
+    },
+    {
+      "name": "Cancun Itinerary",
+      "duration": 7,
+      "price": 5,
+      "like": 9,
+      "activities": ["64f23127b3432db1060e182f","64f23127b3432db1060e1831"],
+      "hashtags": ["beaches", "snorkeling", "MayanRuins"],
+      "comments": [
+        {
+          "comment": "Spent a week in paradise, relaxing on stunning beaches, snorkeling in crystal-clear waters, and exploring ancient Mayan ruins in Cancun.",
+          "user": "64f2357713eaddd7b2c13cf9"
+        }
+      ]
+    },
+    {
+      "name": "Cartagena Itinerary",
+      "duration": 4,
+      "price": 4,
+      "like": 8,
+      "activities": ["64f23127b3432db1060e1830","64f23127b3432db1060e1826"],
+      "hashtags": ["historicalsites", "colonialarchitecture", "streetfood"],
+      "comments": [
+        {
+          "comment": "Immersed myself in the rich history of Cartagena, admired the beautiful colonial architecture, and indulged in delicious street food.",
+          "user": "64f2357713eaddd7b2c13cf8"
+        }
+      ]
+    },
+    {
+      "name": "Machu Picchu Itinerary",
+      "duration": 3,
+      "price": 5,
+      "like": 10,
+      "activities": ["64f23127b3432db1060e182e","64f23127b3432db1060e1833","64f23127b3432db1060e1832"],
+      "hashtags": ["IncaTrail", "mountainviews", "ancientwonders"],
+      "comments": [
+        {
+          "comment": "Embarked on the unforgettable Inca Trail, marveled at the breathtaking mountain views, and explored the mysteries of the ancient wonder, Machu Picchu.",
+          "user": "64f2357713eaddd7b2c13cf8"
+        }
+      ]
+    },
+    {
+      "name": "Rio de Janeiro Itinerary",
+      "duration": 5,
+      "price": 4,
+      "like": 9,
+      "activities": ["64f23127b3432db1060e1834","64f23127b3432db1060e1835","64f23127b3432db1060e1836"],
+      "hashtags": ["beachlife", "ChristtheRedeemer", "sambaparty"],
+      "comments": [
+        {
+          "comment": "Soaked up the vibrant beach life, stood in awe of the iconic Christ the Redeemer statue, and danced the night away at an unforgettable samba party in Rio de Janeiro.",
+          "user": "64f2357713eaddd7b2c13cfa"
+        }
+      ]
+    }
+  ]
+}

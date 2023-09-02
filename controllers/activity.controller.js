@@ -1,41 +1,40 @@
-import Itinerary from "../models/Itinerary.js";
+import Activity from "../models/Activity.js";
 
 const controller = {
-    getItineraries: async (req, res) => {
+    getActivities: async (req, res) => {
 
         try {
-            const itineraries = await Itinerary.find().populate('user').populate('activities').populate({
-                path: 'user'}) 
+            const activities = await Activity.find()
 
-            if (itineraries.length > 0) {
+            if (activities.length > 0) {
                 return res.status(200).json({
                     success: true,
-                    itineraries: itineraries
+                    activities: activities
                 })
             }
             return res.status(404).json({
                 success: true,
-                message: 'No itineraries found'
+                message: 'Activities not found'
             })
 
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 success: false,
-                message: 'Error getting itineraries'
+                message: 'Error getting activities'
             })
         }
     },
 
-    getItineraryById: async (req, res) => {
+    getActivityById: async (req, res) => {
 
         try {
-            const oneItinerary = await Itinerary.findById(req.params.id).populate('activities')
+            const oneActivity = await Activity.findById((req.params.id))
 
-            if (oneItinerary) {
+            if (oneActivity) {
                 return res.status(200).json({
                     success: true,
-                    itinerary: oneItinerary
+                    activity: oneActivity
                 })
             }
 
@@ -53,54 +52,53 @@ const controller = {
         }
     },
 
-    createItinerary: async (req, res) => {
+    createActivity: async (req, res) => {
         try {
-            const newItinerary = await Itinerary.create(req.body);
+            const newActivity = await Activity.create(req.body);
 
             return res.status(201).json({
                 success: true,
-                message: 'Itinerary created',
-                newItinerary
+                message: 'Activity created'
             })
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 success: false,
-                message: 'Error creating Itinerary'
+                message: 'Error creating Activity'
             })
         }
     },
 
-    updateItinerary: async (req, res) => {
+    updateActivity: async (req, res) => {
         try {
-            await Itinerary.updateOne({ _id: req.params.id }, req.body)
+            await Activity.updateOne({ _id: req.params.id }, req.body)
 
             return res.status(200).json({
                 success: true,
-                message: 'The Itinerary was updated successfully'
+                message: 'The Activity was updated successfully'
             })
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 success: false,
-                message: 'Error creating Itinerary'
+                message: 'Error creating Activity'
             })
         }
     },
 
-    deleteItinerary: async (req, res) => {
+    deleteActivity: async (req, res) => {
         try {
-            await Itinerary.deleteOne({ _id: req.params.id })
+            await Activity.deleteOne({ _id: req.params.id })
 
             return res.status(200).json({
                 success: true,
-                message: 'The Itinerary it was deleted successfully'
+                message: 'The Activity it was deleted successfully'
             })
         } catch (error) {
             console.log(error)
             return res.status(500).json({
                 success: false,
-                message: 'Error deleting the Itinerary'
+                message: 'Error deleting the Activity'
             })
         }
     },
