@@ -39,7 +39,15 @@ const controller = {
     getCityById: async (req, res) => {
 
         try {
-            const oneCity = await City.findById(req.params.id).populate({ path: 'itineraries', populate: { path: 'activities', path: 'comments', path: 'user' } })
+            const oneCity = await City.findById(req.params.id)
+                .populate({
+                    path: 'itineraries',
+                    populate: [
+                        { path: 'activities' },
+                        { path: 'comments', populate:('user') },
+                        { path: 'user' }
+                    ]
+                });
 
             if (oneCity) {
                 return res.status(200).json({
