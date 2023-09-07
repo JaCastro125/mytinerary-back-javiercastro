@@ -5,25 +5,20 @@ const controller = {
 
         try {
             const itineraries = await Itinerary.find().populate('user').populate('activities').populate({
-                path: 'user'}) 
+                path: 'user'
+            })
 
             if (itineraries.length > 0) {
                 return res.status(200).json({
                     success: true,
                     itineraries: itineraries
                 })
+            } else {
+                next()
             }
-            return res.status(404).json({
-                success: true,
-                message: 'No itineraries found'
-            })
 
         } catch (error) {
-            console.log(error);
-            return res.status(500).json({
-                success: false,
-                message: 'Error getting itineraries'
-            })
+            next(error);
         }
     },
 
@@ -37,19 +32,12 @@ const controller = {
                     success: true,
                     itinerary: oneItinerary
                 })
+            } else {
+                next()
             }
 
-            return res.status(404).json({
-                success: false,
-                message: 'Not find id'
-            })
-
         } catch (error) {
-            console.log(error);
-            return res.status(500).json({
-                success: false,
-                message: 'Error getting id'
-            })
+            next(error);
         }
     },
 
@@ -63,11 +51,7 @@ const controller = {
                 newItinerary
             })
         } catch (error) {
-            console.log(error);
-            return res.status(500).json({
-                success: false,
-                message: 'Error creating Itinerary'
-            })
+            next(error);
         }
     },
 
@@ -80,11 +64,7 @@ const controller = {
                 message: 'The Itinerary was updated successfully'
             })
         } catch (error) {
-            console.log(error);
-            return res.status(500).json({
-                success: false,
-                message: 'Error creating Itinerary'
-            })
+            next(error);
         }
     },
 
@@ -97,11 +77,7 @@ const controller = {
                 message: 'The Itinerary it was deleted successfully'
             })
         } catch (error) {
-            console.log(error)
-            return res.status(500).json({
-                success: false,
-                message: 'Error deleting the Itinerary'
-            })
+            next(error);
         }
     },
 }

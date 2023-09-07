@@ -1,7 +1,7 @@
 import User from "../models/User.js"
 
 const controller = {
-    getUsers: async (req, res) => {
+    getUsers: async (req, res, next) => {
         try {
             const getUsersArray = await User.find()
 
@@ -11,20 +11,15 @@ const controller = {
                     User: getUsersArray
                 })
             }
-            return res.status(404).json({
-                success: false,
-                message: 'User not found'
-            })
+            else {
+                next()
+            }
 
         } catch (error) {
-            return res.status(500).json({
-                success: false,
-                message: 'Error retieving data',
-                error: error,
-            })
+            next(error);
         }
     },
-    getUserById: async (req, res) => {
+    getUserById: async (req, res, next) => {
 
         try {
             const getUserById = await User.findById(req.params.id)
@@ -33,14 +28,10 @@ const controller = {
                 user: getUserById
             })
         } catch (error) {
-            return res.status(500).json({
-                success: false,
-                message: 'Error retieving data',
-                error: error,
-            })
+            next(error);
         }
     },
-    createUser: async (req, res) => {
+    createUser: async (req, res, next) => {
         try {
             const newUser = await User.create(req.body);
 
@@ -49,14 +40,11 @@ const controller = {
                 message: 'User created'
             })
         } catch (error) {
-            console.log(error);
-            res.status(500).json({
-                success: false,
-                message: 'Error al crear usuario'
-            })
+            console.error('Error at createUser:', error);
+            next(error);
         }
     },
-    deleteUser: async (req, res) => {
+    deleteUser: async (req, res, next) => {
         try {
             const deleteUser = await User.findByIdAndDelete(req.params.id)
             return res.status(200).json({
@@ -64,13 +52,10 @@ const controller = {
                 message: 'User deleted'
             })
         } catch (error) {
-            return res.status(500).json({
-                success: false,
-                message: 'Error deleting the city'
-            })
+            next(error);
         }
     },
-    updateUser: async (req, res) => {
+    updateUser: async (req, res, next) => {
         try {
             const updateUserArray = await User.findByIdAndUpdate(req.params.id, req.body, { new: true })
             return res.status(200).json({
@@ -79,10 +64,7 @@ const controller = {
                 updateUserArray
             })
         } catch (error) {
-            return res.status(500).json({
-                success: false,
-                message: 'Error updating the User'
-            })
+            next(error);
         }
     }
 }

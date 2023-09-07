@@ -1,5 +1,7 @@
 import express from 'express';
 import userController from '../controllers/user.controller.js'
+import { createUserSchema } from '../schema/user.schema.js';
+import { validator } from '../middlewares/validator.js';
 
 const router = express.Router();
 
@@ -9,7 +11,7 @@ router.get('/', getUsers);
 
 router.get('/:id', getUserById);
 
-router.post('/', createUser);
+router.post('/', validator(createUserSchema) ,createUser);
 
 router.delete('/:id', deleteUser);
 

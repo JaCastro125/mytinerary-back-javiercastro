@@ -1,5 +1,6 @@
 import express from 'express';
 import cityController from '../controllers/city.controller.js'
+import { isAdmin } from '../middlewares/isAdmin.middleware.js';
 
 const router = express.Router();
 
@@ -11,8 +12,14 @@ router.get('/:id', getCityById);
 
 router.post('/', createCity);
 
-router.delete('/:id', deleteCity);
+router.delete('/:id',
+    isAdmin,
+    deleteCity
+);
 
-router.put('/:id', updateCity);
+router.put('/:id',
+    isAdmin,
+    updateCity
+);
 
 export default router;

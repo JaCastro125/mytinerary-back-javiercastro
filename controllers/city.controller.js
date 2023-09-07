@@ -21,18 +21,12 @@ const controller = {
                     success: true,
                     cities: cities
                 })
+            } else {
+                next()
             }
-            return res.status(404).json({
-                success: true,
-                message: 'Cities not found'
-            })
 
         } catch (error) {
-            console.log(error);
-            return res.status(500).json({
-                success: false,
-                message: 'Error getting cities'
-            })
+            next(error);
         }
     },
 
@@ -44,7 +38,7 @@ const controller = {
                     path: 'itineraries',
                     populate: [
                         { path: 'activities' },
-                        { path: 'comments', populate:('user') },
+                        { path: 'comments', populate: ('user') },
                         { path: 'user' }
                     ]
                 });
@@ -54,19 +48,12 @@ const controller = {
                     success: true,
                     city: oneCity
                 })
+            } else {
+                next()
             }
 
-            return res.status(404).json({
-                success: false,
-                message: 'Not find id'
-            })
-
         } catch (error) {
-            console.log(error);
-            return res.status(500).json({
-                success: false,
-                message: 'Error getting id'
-            })
+            next(error);
         }
     },
 
@@ -80,11 +67,7 @@ const controller = {
                 newCity
             })
         } catch (error) {
-            console.log(error);
-            return res.status(500).json({
-                success: false,
-                message: 'Error creating city'
-            })
+            next(error);
         }
     },
 
@@ -98,11 +81,7 @@ const controller = {
                 updateCity
             })
         } catch (error) {
-            console.log(error);
-            return res.status(500).json({
-                success: false,
-                message: 'Error creating city'
-            })
+            next(error);
         }
     },
 
@@ -115,11 +94,7 @@ const controller = {
                 message: 'The city it was deleted successfully'
             })
         } catch (error) {
-            console.log(error)
-            return res.status(500).json({
-                success: false,
-                message: 'Error deleting the city'
-            })
+            next(error);
         }
     },
 }

@@ -11,18 +11,12 @@ const controller = {
                     success: true,
                     activities: activities
                 })
+            } else {
+                next()
             }
-            return res.status(404).json({
-                success: true,
-                message: 'Activities not found'
-            })
 
         } catch (error) {
-            console.log(error);
-            return res.status(500).json({
-                success: false,
-                message: 'Error getting activities'
-            })
+            next(error);
         }
     },
 
@@ -36,19 +30,12 @@ const controller = {
                     success: true,
                     activity: oneActivity
                 })
+            } else {
+                next()
             }
 
-            return res.status(404).json({
-                success: false,
-                message: 'Not find id'
-            })
-
         } catch (error) {
-            console.log(error);
-            return res.status(500).json({
-                success: false,
-                message: 'Error getting id'
-            })
+            next(error);
         }
     },
 
@@ -61,11 +48,7 @@ const controller = {
                 message: 'Activity created'
             })
         } catch (error) {
-            console.log(error);
-            return res.status(500).json({
-                success: false,
-                message: 'Error creating Activity'
-            })
+            next(error);
         }
     },
 
@@ -78,11 +61,7 @@ const controller = {
                 message: 'The Activity was updated successfully'
             })
         } catch (error) {
-            console.log(error);
-            return res.status(500).json({
-                success: false,
-                message: 'Error creating Activity'
-            })
+            next(error);
         }
     },
 
@@ -95,11 +74,7 @@ const controller = {
                 message: 'The Activity it was deleted successfully'
             })
         } catch (error) {
-            console.log(error)
-            return res.status(500).json({
-                success: false,
-                message: 'Error deleting the Activity'
-            })
+            next(error);
         }
     },
 }
