@@ -7,10 +7,11 @@ const schema = new Schema({
     email: {type: String, required: true},
     password: {type: String, required: true},
     image: {type: String, required: true},
+    country: {type: String, required: false},
+    google: {type: Boolean, default: false},
     online: {type: Boolean, default: false},
     verified: {type: Boolean, default:true},
     verified_code: {type: String}
-    /* role: {type: String, required: false}, */
 }, {
     timestamps: true
 });

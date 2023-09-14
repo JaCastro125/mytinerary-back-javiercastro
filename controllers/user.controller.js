@@ -33,11 +33,21 @@ const controller = {
     },
     createUser: async (req, res, next) => {
         try {
+            const existingUser = await User.findOne({ email: req.body.email });
+
+            if (existingUser) {
+                return res.status(400).json({
+                    success: false,
+                    message: "El correo electrónico ya está registrado.",
+                });
+            }
+
             const newUser = await User.create(req.body);
 
             return res.status(200).json({
                 success: true,
-                message: 'User created'
+                message: 'User created',
+                user: newUser
             })
         } catch (error) {
             console.error('Error at createUser:', error);
